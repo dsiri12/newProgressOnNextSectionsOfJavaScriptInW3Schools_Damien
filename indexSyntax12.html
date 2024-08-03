@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage that has to do with JavaScript being case sensitive -->
+<h2>JavaScript is Case Sensitive</h2>
+
+<!-- the p element that is telling me to try changing the lastName variable to the lastname variable -->
+<p>Try to change lastName to lastname.</p>
+
+<!-- the p element that contains an id called demo only -->
+<p id="demo"></p>
+
+<script>
+
+// the let keyword that is creating the lastname and lastName variables
+let lastname, lastName;
+
+// the lastName variable that has a value of a string called Doe stored inside of there
+lastName = "Doe";
+
+// the lastname variable that has a stored value of a string called Peterson inside of there
+lastname = "Peterson";
+
+// the specific line of code that is telling the browser of this current document/webpage to print out the lastName variable into the specific HTML element which is the p element that contains an id called demo and where the lastName variable is changeable to the lastname variable by changing the uppercase N to the lowercase n in "lastName" and then where I reload this specific document/webpage right after to see the real difference of the values of both of the lastName and lastname variables in this specific document/webpage
+document.getElementById("demo").innerHTML = lastName;
+</script>
+
+</body>
+</html>

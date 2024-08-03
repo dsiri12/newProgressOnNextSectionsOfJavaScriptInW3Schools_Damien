@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- the h2 element that titles this current webpage that has to do with mainly more about JavaScript comments -->
+<h2>JavaScript Comments</h2>
+
+<!-- an h1 element that contains an id called myH -->
+<h1 id="myH"></h1>
+
+<!-- a p element that contains only an id called myP -->
+<p id="myP"></p>
+
+<script>
+
+// the multi-line comment that has 2 different lines of code being commented and blocked out so then they each can be prevented from being executed
+/*
+document.getElementById("myH").innerHTML = "Welcome to my Homepage";
+document.getElementById("myP").innerHTML = "This is my first paragraph.";
+*/
+
+// the particular line of code that wasn't included with the 2 lines of code above that were commented out that is telling the browser to print out the string called "The comment-block is not executed." into the specific HTML element being the p element that contains an id called myP
+document.getElementById("myP").innerHTML = "The comment-block is not executed.";
+</script>
+
+
+</body>
+</html>

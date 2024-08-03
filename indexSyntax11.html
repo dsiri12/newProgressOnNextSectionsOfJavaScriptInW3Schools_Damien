@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this specific webpage that mainly has to do with JavaScript comments not being executable -->
+<h2>JavaScript Comments are NOT Executed</h2>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable being defined by the let keyword
+let x;
+
+// the x variable that has the value of 5 stored inside of there
+x = 5;
+
+// the x variable having the value of 6 stored inside of there being commented out and saying that it won't be executed right after
+// x = 6; I will not be executed
+
+// the particular line of code that is telling the browser of this specific document/webage to print out the x variable to the specific HTML element that is the p element that contains an id called demo
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
