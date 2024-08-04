@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title for this webpage that has to do with JavaScript variables -->
+<h1>JavaScript Variables</h1>
+
+<!-- the p element that explains the nature behind the x, y, and z variables -->
+<p>In this example, x, y, and z are undeclared.</p>
+
+<!-- the p element that continues the explanation about the x, y, z variables -->
+<p>They are automatically declared when first used.</p>
+
+<!-- the p element that only consists an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable that has a stored value of 5 inside of there
+x = 5;
+
+// the y variable having the value of 6 stored inside of there
+y = 6;
+
+// the z variable that has a stored value of the sum of the x and y variables where the + operator is in between of them
+z = x + y;
+
+// the particular line of code that has a break in between right after the = operator and before the particular string after the = operator that is telling the browser of this current document/webpage to print out the string called "The value of z is: " and the z variable with the + operator in between of them which are being put together in one new string into the specific HTML element which is the p element that has an id called demo
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z;
+</script>
+
+</body>
+</html>
