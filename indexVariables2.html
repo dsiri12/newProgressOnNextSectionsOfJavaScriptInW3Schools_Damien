@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title for this specific webpage that has more to do with JavaScript variables -->
+<h1>JavaScript Variables</h1>
+
+<!-- the p element that is explaining what x, y, z are of being variables -->
+<p>In this example, x, y, and z are variables.</p>
+
+<!-- the p element that contains only an id called demo and nothing else that is included -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable being declared by the var keyword and has a stored value of 5
+var x = 5;
+
+// the y variable is declared by the var keyword and the value of 6 is stored inside of the y variable
+var y = 6;
+
+// the z variable declared by the var keyword and has the stored value of the sum of the x and y variables with the + operator in between of these 2 different variables
+var z = x + y;
+
+// line of code in particular (that has a break in between right after the = operator and before the string that is wrapped in double quotes) is telling the browser of this specific document/webpage to print out what the string being wrapped in double quotes and the z variable are being put together by the + operator into a new string right into the specific HTML element being the p element that only contains the id called demo
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z;
+</script>
+
+</body>
+</html>
