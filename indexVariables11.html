@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webapge that has to do with another thing about JavaScript variables -->
+<h1>JavaScript Variables</h1>
+
+<!-- the p element that explains about what would happen with a JavaScript variable if i re-declare it and how it's value won't be lost -->
+<p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the carName variable (which is declared by the var keyword) being assigned a value of "Volvo"
+var carName = "Volvo";
+
+// the carName variable declared by the var keyword without any value assigned to it still carrying it's assigned value of "Volvo" that a line of code right above this specific line of code has
+var carName;
+
+// line of code in specific that is telling the browser of this document/webpage to output the value of "Volvo" of the carName variable into an HTML element being the p element containing only an id called demo
+document.getElementById("demo").innerHTML = carName;
+</script>
+
+</body>
+</html>

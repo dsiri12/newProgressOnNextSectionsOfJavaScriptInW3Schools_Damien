@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage having more to do with JavaScript variables -->
+<h1>JavaScript Variables</h1>
+
+<!-- the p element explaining about the result of "5", 2, and 3 being added to eachother -->
+<p>The result of adding "5" + 2 + 3 is:</p>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable (declared by the let keyword) that's assigned a value of an expression of "5", 2, and 3 being added to eachother into a new string from how the 1st number in this expression being 5 is wrapped in double quotes and where 2 and 3 would be strings right after
+let x = "5" + 2 + 3;
+
+// the particular line of code that is telling the browser of this current document/webpage to output the x variable into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

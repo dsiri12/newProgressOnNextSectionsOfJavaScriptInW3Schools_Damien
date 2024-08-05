@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has more to do with JavaScript variables -->
+<h1>JavaScript Variables</h1>
+
+<!-- the p element that explains about how variables can be declared into one statement -->
+<p>You can declare many variables in one statement.</p>
+
+<!-- the p element that only contains an id called demo -->
+<p id="demo"></p>
+
+<!-- opening and closing script tags that contain inside of them being each of the 3 different variables that are able to span multiple lines (including a line of code right below the 3 different variables spanning multiple lines that is outputting the value being assigned to the carName variable to (the HTML element (the p element with an id called demo))) -->
+<script>
+
+// the person variable (being declared by the let keyword) that has an assigned value of "John Doe"
+let person = "John Doe",
+
+// the carName variable (without any keyword to declare this specific variable) having an assigned value of "Volvo"
+carName = "Volvo",
+
+// the price variable (having no keyword to be declared by) that is assigned a value of 200
+price = 200;
+
+// line of code that is telling the browser of this document/webpage to output the value of "Volvo" being assigned to the carName variable into the specific HTML element being the p element containing only an id called demo
+document.getElementById("demo").innerHTML = carName;
+</script>
+
+</body>
+</html>

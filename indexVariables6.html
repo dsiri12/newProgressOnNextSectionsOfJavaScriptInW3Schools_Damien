@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage having more to do with JavaScript variables -->
+<h1>JavaScript Variables</h1>
+
+<!-- the p element that explains how strings are written with quotes wrapped around them -->
+<p>Strings are written with quotes.</p>
+
+<!-- the p element briefly explaining how numbers are written out without quotes -->
+<p>Numbers are written without quotes.</p>
+
+<!-- the p element that only contains an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the pi variable declared by the const keyword which can't be changed that has a stored value of 3.14
+const pi = 3.14;
+
+// the person variable is declared by the let keyword which can be changed that has the value of the string wrapped in double quotes called "John Doe" stored inside of the person variable
+let person = "John Doe";
+
+// the answer variable being declared by the let keyword which is changeable where the value of a string being wrapped in single quotes called "Yes I am!" is stored inside of the answer variable
+let answer = 'Yes I am!';
+
+// line of code in particular (containing a break in between right after the assignment operator and the pi variable) that's telling the browser of this current document/webpage to print out what the pi element, the person variable, and the answer variable including the 2 br tags in between of these 3 different variables are all being put together into a new string right into the HTML element in specific of the p element that contains only an id called demo
+document.getElementById("demo").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
+</script>
+
+</body>
+</html>
