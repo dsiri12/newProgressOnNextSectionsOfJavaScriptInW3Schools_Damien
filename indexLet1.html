@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage that has to do with using the var variable to redeclare any variable -->
+<h2>Redeclaring a Variable Using var</h2>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable (declared by the var variable) having a stored value of 10
+
+var  x = 10;
+// Here x is 10
+
+{ 
+
+// the x variable (declared by the var variable) having a stored value of 2 in {} block where it's not allowed to have a block scope
+
+var x = 2;
+// Here x is 2
+}
+
+// the x variable (declared by the var variable) having a stored value of 2 that is allowed to be used around here in the global scope
+
+// Here x is 2
+
+// the particular line of code that is telling the browser of this current document/webpage to output the x variable of it's value into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
