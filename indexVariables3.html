@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage that has to do with the continuation of JavaScript variables -->
+<h1>JavaScript Variables</h1>
+
+<!-- the p element with the usual explanation about the x, y, z still being variables from the last couple examples before this specific example here -->
+<p>In this example, x, y, and z are variables.</p>
+
+<!-- the p element that contains an id called demo only -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable declared by the let keyword that has a stored value of 5
+let x = 5;
+
+// the y variable being declared by the let keyword having a stored value of 6
+let y = 6;
+
+// the z variable is declared by the let keyword that has a value stored inside being the sum of the x and y variables that have the + operator in between of these 2 different variables
+let z = x + y;
+
+// the particular line of code (containing a break in between right after the assignment operator and the string wrapped in double quotes) that is telling the browser of this current document/webpage to print out what the string wrapped in double quotes and the z variable are being put together by the + operator in a new string into the HTML element in specific of the p element that only contains an id called demo
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z;
+</script>
+
+</body>
+</html>
