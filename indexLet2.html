@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage having to do with redeclaring any variable of some sort using the let keyword -->
+<h2>Redeclaring a Variable Using let</h2>
+
+<!-- the p element that contains only an id called demo and nothing else -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable (declared by the let keyword) that has a stored value of 10
+
+let  x = 10;
+// Here x is 10
+
+{  
+
+  // the x variable (declared by the let keyword) that has a stored value of 2 that is in the block scope
+
+  let x = 2;
+  // Here x is 2
+}
+
+// the x variable (declared by the let keyword) that has a stored value of 10 that has never been redeclared and can't be used here from how its declared by the let keyword and not the var keyword
+
+// Here x is 10
+
+// the particular line of code that is telling the browser of this specific document/browser to output the x variable of it's value into the HTML element being the p element that contains an id called demo
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
