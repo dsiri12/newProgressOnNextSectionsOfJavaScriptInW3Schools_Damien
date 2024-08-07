@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has to do with the let variable in JavaScript -->
+<h2>JavaScript let</h2>
+
+<!-- the p element that briefly explains about how a JavaScript variable being redeclared by the var keyword is allowed anywhere it is in a program -->
+<p>Redeclaring a JavaScript variable with <b>var</b> is allowed anywhere in a program:</p>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable (declared by the var keyword) having a stored value of 2
+var x = 2;
+// Now x is 2
+
+// the x variable (declared by the var keyword) having a stored value of 3 which has been redeclared
+var x = 3;
+// Now x is 3
+
+// the particular line of code that is telling the browser of this specific document/webpage to output the x variable of it's value into the HTML element being the p element thaat contains an id called demo
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
