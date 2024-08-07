@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage having more to do with JavaScript Hoisting -->
+<h2>JavaScript Hoisting</h2>
+
+<!-- the p element that is explaining how a variable can't be used before it's declared by the let keyword -->
+<p>With <b>let</b>, you cannot use a variable before it is declared.</p>
+
+<!-- the p element that contains an id called demo only -->
+<p id="demo"></p>
+
+<script>
+
+// the try statement that is carrying each of the 2 different statements with the same variable called carName of where one statement that has the carName isn't declared and another statement that is declared by the let keyword
+try {
+
+// the carName variable that is assigned a value of a string that is wrapped in double quotes called "Saab" without being declared
+  carName = "Saab";
+
+// the carName variable (declared by the let keyword) that is assigned a value of a string that is wrapped in double quotes called "Saab"
+  let carName = "Volvo";
+}
+
+// the catch statement that has an err variable inside of it's parentheses
+catch(err) {
+
+// the particular line of code that is telling the browser of this current document/webpage to output the err variable that is part of the catch statement carrying this specific line of code here into an HTML element being the p element containing an id called demo
+  document.getElementById("demo").innerHTML = err;
+}
+</script>
+
+</body>
+</html>

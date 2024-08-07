@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has to do with the let variable in JavaScript -->
+<h2>JavaScript let</h2>
+
+<!-- the p element that explains about how a variable that is being redeclared by the let keyword in either another scope or in another block is allowed -->
+<p>Redeclaring a variable with <b>let</b>, in another scope, or in another block, is allowed:</p>
+
+<!-- the p element that contains an id called demo and nothing else -->
+<p id="demo"></p>
+
+<script>
+
+// where the x variable (defined by the let keyword) that has a stored value of 2 around this block is allowed
+let x = 2;   // Allowed
+
+{
+
+// where the x variable (redefined by the let keyword) that has a stored value of 4 around this other block is allowed
+  let x = 3;   // Allowed
+}
+
+{
+
+// where the x variable (defined by the let keyword) that has a stored value of 4 around this next block is allowed
+  let x = 4;   // Allowed
+}
+
+// the particular line of code that is telling the browser of this document/webpage to output the x variable of it's value into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

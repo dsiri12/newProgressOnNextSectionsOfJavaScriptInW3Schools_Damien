@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage that has to do with javaScript hoisting -->
+<h2>JavaScript Hoisting</h2>
+
+<!-- the p element that explains how a variable can be used before it's declared by the var keyword -->
+<p>With <b>var</b>, you can use a variable before it is declared:</p>
+
+<!-- the p element that contains an id called demo only -->
+<p id="demo"></p>
+
+<script>
+
+// the carName variable (without being declared by any keyword) that is assigned a string wrapped in double quotes called "Volvo"
+carName = "Volvo";
+
+// the line of code that is telling the browser to output the carName variable of it's assigned value called "Volvo" into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = carName;
+
+// the carName variable being declared by the var keyword right after being assigned a string wrapped in double quotes called "Volvo" without being declared at first
+var carName;
+</script>
+
+</body>
+</html>
