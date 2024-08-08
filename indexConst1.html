@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage that has to do with JavaScript const -->
+<h2>JavaScript const</h2>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the try function containing the PI variable that's declared by the const keyword that has the stored value and the PI variable that isnt defined by any keyword of any sort that has the stored value
+try {
+
+  //  the PI variable (declared by the const keyword) that has the stored value inside of there
+  const PI = 3.141592653589793;
+
+  //  the PI variable (without being declared by any keyword) that has the value of 3.14 stored in there
+  PI = 3.14;
+}
+
+// the catch function that has an err variable inside of it's parentheses that has a line of code inside of there that is mostly outputting the err variable
+catch (err) {
+
+  //  the particular line of code that is telling the browser of this current document/webpage to output the err variable part of the catch function that is carrying this specific line of code into the HTML element being the p element containing only an id called demo
+  document.getElementById("demo").innerHTML = err;
+}
+</script>
+
+</body>
+</html>
