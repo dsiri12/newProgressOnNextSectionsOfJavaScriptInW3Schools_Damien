@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has more to do with JavaScript const -->
+<h2>JavaScript const</h2>
+
+<!-- the p element that briefly explains about what doesn't make elements unchangeable of mainly declaring a constant array -->
+<p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+<!-- the p element that only contains an id called demo and nothing else -->
+<p id="demo"></p>
+
+<script>
+
+// the cars variable (declared by the const keyword) that is assigned an array of the 3 different string values of "Saab", "Volvo", and "BMW" and where a single-line comment above is saying for me to create an array
+
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// the cars variable that has an array value of 0 inside of the brackets next to the cars variable that carries a string value wrapped in double quotes called "Toyota" from what is being intended to be changed of changing the 1st element in the array of the cars variable called "Saab" into "Toyota" instead and where a single line comment above is saying for me to change an element in the array of the cars variable
+
+// Change an element:
+cars[0] = "Toyota";
+
+// the cars variable that has a .push() method with a string value wrapped in double quotes called "Audi" that is mostly intending to add a new element into the array of the cars variable and where a single-line comment above is saying for me to add an element to the array of the cars variable
+
+// Add an element:
+cars.push("Audi");
+
+// the particular line of code that is telling the browser of this document/webpage to print out the cars variable of it's array into the HTML element being the p element that contains an id called demo and where a single line comment above is saying for me to display the array of the cars variable
+
+// Display the Array:
+document.getElementById("demo").innerHTML = cars; 
+</script>
+
+</body>
+</html>

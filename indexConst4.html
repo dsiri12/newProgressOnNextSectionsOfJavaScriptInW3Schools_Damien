@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage that has more to do with JavaScript const -->
+<h2>JavaScript const</h2>
+
+<!-- the p element that is explaining about what doesn't make object properties unchangeable of mainly declaring a constant object -->
+<p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the car variable (declared by the const keyword) that is assigned an array wrapped in curly brackets that has the type being "Fiat", the model being "500", and lastly the color being "white" and where a single line comment above says for me to change an object within the array wrapped in curly brackets of the car variable
+
+// Create an object:
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// the car variable that has a color property that is assigned a string value wrapped in double quotes called "red" and where a single-line comment above says for me to change a property in the line of code below that single-line comment
+
+// Change a property:
+car.color = "red";
+
+// the car variable that has an owner property which also assigned a string value wrapped in double quotes called "Johnson" and where a single line comment above is saying for me to add a property in the line of code below the single-line comment above it
+
+// Add a property:
+car.owner = "Johnson";
+
+// the line of code in particular that is telling the browser of this current document/webpage to print out the specific statement being wrapped in double quotes and the car variable with the owner property being put together by the + operator into the HTML element being the p element that contains only an id called demo and where a single-line comment above says for me to display the owner property of the car variable
+
+// Display the property:
+document.getElementById("demo").innerHTML = "Car owner is " + car.owner; 
+</script>
+
+</body>
+</html>
