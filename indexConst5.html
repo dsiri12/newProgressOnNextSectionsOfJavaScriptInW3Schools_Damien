@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage having to do with more of JavaScript const -->
+<h2>JavaScript const</h2>
+
+<!-- the p element that briefly explains how I can't reassign a constant object -->
+<p>You can NOT reassign a constant object:</p>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the try function that has the car variable declared by the const keyword that is assigned it's own array and also the car variable without being declared by any keyword that's assigned it's own array
+try {
+
+  // the car variable (declared by the const keyword) being assigned it's own array in curly brackets that include the type being "Fiat", the model being "500", and the color being "white"
+  const car = {type:"Fiat", model:"500", color:"white"};
+
+  // the car variable (without being declared by any keyword) that's assigned an array in curly brackets that include the type being "Volvo", the model being "EX60", and the color being "red" where the array of the car variable not being declared by any keyword can't be reassigned
+  car = {type:"Volvo", model:"EX60", color:"red"};
+}
+
+// the catch function that has an err variable inside of it's parenthesis that has a particular line of code that is outputting the err variable
+catch (err) {
+  
+  // line of code in particular that is telling the browser of this document/webpage to print out the err variable from the catch function into the HTML element being the p element containing an id called demo
+  document.getElementById("demo").innerHTML = err;
+}
+</script>
+
+</body>
+</html>

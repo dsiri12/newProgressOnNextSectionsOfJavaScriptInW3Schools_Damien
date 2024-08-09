@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage having more to do with JavaScript hoisting -->
+<h2>JavaScript Hoisting</h2>
+
+<!-- the p element that explains about how I can't use a variable before it's declared in terms of the const keyword -->
+<p>With <b>const</b>, you cannot use a variable before it is declared:</p>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the try function that has an alert containing the carName variable inside of it's parentheses and also the carName variable declared by const that is assigned it's own string value
+try {
+
+  // the alert that has the carName variable inside of it's parentheses
+  alert(carName);
+
+  // the carName variable (declared by the const keyword) that's assigned a string value wrapped in double quotes called "Volvo"
+  const carName = "Volvo";
+}
+
+// the catch function that has an err variable inside of it's parentheses and a particular line of code that is outputting the err variable
+catch (err) {
+
+  // the line of code in particular that is telling the browser of this current document/webpage to print out the err variable into the HTML element being the p element containing an id called demo
+  document.getElementById("demo").innerHTML = err;
+}
+
+</script>
+</body>
+</html>
