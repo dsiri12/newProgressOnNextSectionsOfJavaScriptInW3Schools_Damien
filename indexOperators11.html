@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has more to do with JavaScript string operators -->
+<h1>JavaScript String Operators</h1>
+
+<!-- the h2 element that says the + operator of which this webpage will go more in depth about from what other webpages have shown of the + operator -->
+<h2>The + Operator</h2>
+
+<!-- the p element that explains on what adding a number and a string together with the + operator does of which will then return a string right after as a result of adding a number and a string together -->
+<p>Adding a number and a string, returns a string.</p>
+
+<!-- the p element containing only an id called demo and nothing else that is contained inside of this specific element -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable (defined by the let keyword) that is assigned an expression of 2 numbers of 5 and 5 each being added to eachother by the + operator
+let x = 5 + 5;
+
+// the y variable (defined by the let keyword) being assigned an expression of a string value of "5" and the number of 5 being put together by the + operator
+let y = "5" + 5;
+
+// the z variable (defined by the let keyword) that's assigned an expression of the string value of "Hello" and the number of 5 that are each being put together by the + operator
+let z = "Hello" + 5;
+
+// the particular line of code that is telling the browser of this document/webpage to print out the expression in particular the x, y, and z variables including 2 br's that are all being put together by the + operator into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML =
+x + "<br>" + y + "<br>" + z;
+</script>
+
+</body>
+</html>

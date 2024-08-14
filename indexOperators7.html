@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this specific webpage that has to do with JavaScript string operators -->
+<h1>JavaScript String Operators</h1>
+
+<!-- the p element that explains about conditional operators of mainly how all of them are able to be used on both numbers and strings of any sort -->
+<p>All conditional operators can be used on both numbers and strings.</p>
+
+<!-- the p element containing only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the text1 variable (defined by the let keyword) that is assigned a string value of the uppercase letter A wrapped in double quotes
+let text1 = "A";
+
+// the text2 variable (defined by the let keyword) being assigned a string value of the uppercase letter B that is wrapped in double quotes
+let text2 = "B";
+
+// the result variable (defined by the let keyword) that is assigned an expression that has the text1 and text2 variables including the < operator in between of these 2 different variables to show how the text1 variable is less than the text2 variable
+let result = text1 < text2;
+
+// the particular line of code that is telling the browser of this specific document/webpage to print out the specific string value wrapped in double quotes and the result variable that has the + operator in between of them into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = "Is A less than B? " + result;
+</script>
+
+</body>
+</html>

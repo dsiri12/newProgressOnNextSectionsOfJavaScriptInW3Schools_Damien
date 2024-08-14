@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage having more to do with JavaScript string operators -->
+<h1>JavaScript String Operators</h1>
+
+<!-- the p element that is briefly explaining about strings and how they're compared alphabetically -->
+<p>Note that strings are compared alphabetically:</p>
+
+<!-- the p element containing an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the text1 variable (declared by the let keyword) that is assigned a string value of the number 20 that is wrapped in double quotes
+let text1 = "20";
+
+// the text2 variable (declared by the let keyword) being assigned a string value of the number 5 wrapped in double quotes
+let text2 = "5";
+
+// the result variable (declared by the let keyword) that's assigned an expression that has the text1 and text2 variables including the < operator in between of these variables to determine whether if the value of the text1 variable is less than the value of the text2 variable or not
+let result = text1 < text2;
+
+// the particular line of code that is telling the browser of this document/webpage to print out the specific string value wrapped in double quotes and the result variable that are being put together by the + operator into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = "Is 20 less than 5? " + result;
+</script>
+
+</body>
+</html>

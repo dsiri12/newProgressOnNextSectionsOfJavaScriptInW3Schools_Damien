@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has more to do with JavaScript string operators -->
+<h1>JavaScript String Operators</h1>
+
+<!-- the h2 element that says the + operator from what this webpage will be about -->
+<h2>The + Operator</h2>
+
+<!-- the p element that briefly explains about the + operator of how it concatenates (meaning to add) strings together -->
+<p>The + operator concatenates (adds) strings.</p>
+
+<!-- the p element that contains an id called demo and nothing else that is contained inside of this element in specific -->
+<p id="demo"></p>
+
+<script>
+
+// the text1 variable (declared by the let keyword) that is assigned a string value of "John"
+let text1 = "John";
+
+// the text2 variable (declared by the let keyword) being assigned a string value of "Doe"
+let text2 = "Doe";
+
+// the text3 variable (declared by the let keyword) that's assigned an expression that has the text1 variable, the string value of a space without any characters of any sort inside that's wrapped in double quotes, and the text2 variable that are each being concatenated by the + operator
+let text3 = text1 + " " + text2;
+
+// the particular line of code that is telling the browser of this document/webpage to output the text3 variable of it's own value into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = text3;
+</script>
+
+</body>
+</html>
